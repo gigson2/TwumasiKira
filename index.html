@@ -2,13 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Page</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
+<main>
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
-    <h1>Hello World</h1>
+    <h1 id="title">Survey Page</h1>
+    <p id="description">Welcome to Twumasi and Kira Web Survey Page</p>
+    <div>
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Name: </label>
+          <input id="name" name="name" type="text" placeholder="Enter Name" required>
+        </div>
+        <br>        
+        <div>
+          <label id="email-label" for="email">Email: </label>
+          <input id="email" name="email" type="email" placeholder="Enter Email Address" required>
+        </div>
+        <br>
+        <div>
+          <label id="number-label" for="number">Number: </label>
+          <input id="number" name="number" type="number" min="0" max="100" placeholder="Enter Number">
+        </div>
+        <br>
+        <div>
+          <label id="dropdown-label" for="marital">Marital Status: </label>
+          <select name="marrital" id="dropdown">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="separated">Separated</option>
+            <option value="divorced">Divorced</option>
+          </select>
+        </div>
+        <br>        
+        <div>          
+          <input id="n" name="age" type="radio" value="0-15">
+          <label id="radio-label" for="radio">Age</label>
+          <br>
+          <input id="n" name="age" type="radio" value="16-30">
+          <label id="radio-label" for="radio">Age</label>
+          <br>
+          <input id="n" name="age" type="radio" value="31-45">
+          <label id="radio-label" for="radio">Age</label>
+          <br>
+          <input id="n1" name="age" type="checkbox" value="Lower">
+          <label id="checkbox-label" for="checkbox">Level</label>
+          <br>
+          <input id="n1" name="age" type="checkbox" value="Medium">
+          <label id="checkbox-label" for="checkbox">Medium</label>
+        </div>
+        <br>
+        <div>
+          <textarea name="textarea" id="texta" cols="30" rows="10">Additional Comment</textarea>
+        </div> 
+        <br>
+        <div>
+          <button id="submit">Submit</button>
+        </div>           
+      </form>
+    </div>
   </body>
+</main>
+ 
 </html>
